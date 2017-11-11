@@ -11,9 +11,8 @@ public class InsertAddress implements RequestHandler<Address, String> {
 
     public static void main(String[] args)
     {
-        Address address = new Address(124,"Street Main","Street Alt","Tel Aviv","12345","Bleh","Israel");
-        DataAccess dataAccess = new DataAccess();
-        dataAccess.insert(address);
+        Address address = new Address("Street Main","Street Alt","Tel Aviv","12345","Bleh","Israel");
+        DataAccess.getInstance().save(address);
     }
 
 
@@ -21,9 +20,8 @@ public class InsertAddress implements RequestHandler<Address, String> {
 
         try
         {
-            DataAccess dataAccess = new DataAccess();
-            long id = dataAccess.insert(address);
-            return String.format("Hello Address with id : ",id);
+            DataAccess.getInstance().save(address);
+            return String.format("Hello Address with id : ",address.getID());
         }
         catch (Exception ex)
         {

@@ -1,45 +1,51 @@
 package Requests;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class CreateListRequest {
 
-    private long shopperId;
+    private String shopperId;
 
-    private ArrayList<Long> participantIds;
+    private List<String> participantIds;
 
-    private ArrayList<Long> itemInListIds;
+    private List<String> itemInListIds;
 
     private String name;
 
-    public CreateListRequest(long shopperId, ArrayList<Long> participantIds, ArrayList<Long> itemInListIds, String name) {
+    private String storeId;
+
+    public CreateListRequest(String shopperId, List<String> participantIds, List<String> itemInListIds, String name,String store) {
         this.shopperId = shopperId;
         this.participantIds = participantIds;
         this.itemInListIds = itemInListIds;
         this.name = name;
+        this.storeId = store;
     }
 
-    public long getShopperId() {
+    public String getShopperId() {
         return shopperId;
     }
 
-    public void setShopperId(long shopperId) {
+    public void setShopperId(String shopperId) {
         this.shopperId = shopperId;
     }
 
-    public ArrayList<Long> getParticipantIds() {
+    public List<String> getParticipantIds() {
         return participantIds;
     }
 
-    public void setParticipantIds(ArrayList<Long> participantIds) {
+    public void setParticipantIds(ArrayList<String> participantIds) {
         this.participantIds = participantIds;
     }
 
-    public ArrayList<Long> getItemInListIds() {
+    public List<String> getItemInListIds() {
         return itemInListIds;
     }
 
-    public void setItemInListIds(ArrayList<Long> itemInListIds) {
+    public void setItemInListIds(List<String> itemInListIds) {
         this.itemInListIds = itemInListIds;
     }
 
@@ -49,5 +55,17 @@ public class CreateListRequest {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setParticipantIds(List<String> participantIds) {
+        this.participantIds = participantIds;
+    }
+
+    public String getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
     }
 }
