@@ -4,7 +4,6 @@ import DateUtil.DateFormatting;
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @DynamoDBTable(tableName="Participants")
 public class Participant {

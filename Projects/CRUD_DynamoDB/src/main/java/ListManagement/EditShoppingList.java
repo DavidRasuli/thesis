@@ -4,11 +4,8 @@ import DataModel.ShoppingList;
 import DbUtil.DataAccess;
 import Requests.EditShoppingRequest;
 import Responses.EditShoppingResponse;
-import Responses.FinishShoppingResponse;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-
-import java.time.LocalDateTime;
 
 public class EditShoppingList implements RequestHandler<EditShoppingRequest, EditShoppingResponse> {
 

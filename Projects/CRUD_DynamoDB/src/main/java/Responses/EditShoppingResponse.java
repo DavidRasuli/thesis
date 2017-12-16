@@ -1,7 +1,7 @@
 package Responses;
 
 public class EditShoppingResponse {
-    private String shoppingListId;
+    private String shoppingListId; //TODO : Remove
     private String exceptionMessage;
 
     public EditShoppingResponse(String shoppingListId, String exceptionMessage) {

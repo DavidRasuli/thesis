@@ -7,7 +7,6 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @DynamoDBTable(tableName="Stores")
 public class Store {

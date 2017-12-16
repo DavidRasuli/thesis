@@ -1,7 +1,6 @@
 package ListManagement;
 
 import DataModel.ShoppingList;
-import DateUtil.DateFormatting;
 import DbUtil.DataAccess;
 import Requests.FinishShoppingRequest;
 import Responses.FinishShoppingResponse;

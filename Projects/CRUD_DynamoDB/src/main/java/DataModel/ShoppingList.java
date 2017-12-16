@@ -4,9 +4,7 @@ import DateUtil.DateFormatting;
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @DynamoDBTable(tableName="ShoppingLists")
 public class ShoppingList{
