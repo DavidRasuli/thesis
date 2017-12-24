@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "987953979452",
+    "firebase_url": "https://sharedshoppinglistfirebase.firebaseio.com",
+    "project_id": "sharedshoppinglistfirebase",
+    "storage_bucket": "sharedshoppinglistfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987953979452:android:93d01996549d1e93",
+        "android_client_info": {
+          "package_name": "com.sharedshoppinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987953979452-s26bfa4tsjpj1i5c28dkgbl3j61abs0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWPZp5VrJb63U3FWH7vAOgXoASHuqZxro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
