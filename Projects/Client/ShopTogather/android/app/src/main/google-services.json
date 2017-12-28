@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526415191770",
+    "project_id": "firebase-shoptogether"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526415191770:android:dec12c9274af2812",
+        "android_client_info": {
+          "package_name": "com.shoptogether.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526415191770-8ir157e2jaq9ps6vrm7a5bgnslgb77lp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoptogether.staging",
+            "certificate_hash": "0cabe4aeb0039e37e199ce3147de0a5ee949931c"
+          }
+        },
+        {
+          "client_id": "526415191770-ogcs2enicnlm3ce5dpsh1drbckoutd4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2qTQI4l8-7zXPmEK2RIi9u76Zf9lDs0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
