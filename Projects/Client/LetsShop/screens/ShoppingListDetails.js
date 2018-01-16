@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView,View,ListView ,Text,StyleSheet} from 'react-native';
+import { ScrollView,View,ListView ,Text,StyleSheet,Button} from 'react-native';
 import { Tile, List,ListItem } from 'react-native-elements';
 
 class ShoppingListDetails extends Component {
@@ -23,10 +23,43 @@ class ShoppingListDetails extends Component {
         this.fetchUsers();
     }
 
+    addItemClicked()
+    {
+        /*
 
-    renderRow(rowData) {
-        return "";// (<Text>{rowData.name}</Text>);
+        if plus :
+        1.turn sign into minus
+        2.add textbox - item
+        3.add textbox - qty
+        4.add "v" confirm sign.
+
+        if minus :
+        1.turn sign into plus.
+        2. purge the textboxes and the confirmation
+         */
     }
+
+    onNewItemConfirmation()
+    {
+        /*
+        call services - add item to list.
+        call or recieve items of the list.
+
+         */
+    }
+
+    onFinish(){
+        //call services- finish list
+
+    }
+
+    onParticipantSignClicked()
+    {
+        //move to participants activity
+    }
+
+
+
 
 
     renderRow(shoppingListRow, sectionId, rowId, highlightRow) {
@@ -50,7 +83,26 @@ class ShoppingListDetails extends Component {
                     dataSource={this.state.shoppingListDataSource}
                     renderRow={this.renderRow.bind(this)}
                 />
+                <View style={styles.row}>
+                    <Button
+                        style={styles.v1}
+                        onPress={this.addItemClicked}
+                        title="Plus"
+                        color="#841584"
+                        accessibilityLabel="Learn more about this purple button"
+                    />
+                    <Text
+                        style={styles.v2}>
+                        product name
+                    </Text>
+
+                    <Text
+                        style={styles.v3}>
+                        qty
+                    </Text>
+                </View>
             </View>
+
         );
     }
 }
