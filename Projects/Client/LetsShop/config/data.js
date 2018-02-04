@@ -193,3 +193,13 @@ export const shoppingLists = [
         "picture" : "https://www.shareicon.net/data/128x128/2016/07/20/799025_finish_512x512.png"
     }
     ];
+
+export const itemsInList = {
+
+        "id":"212",
+        "imageUrls" :[
+            {"url":"https://dtgxwmigmg3gc.cloudfront.net/files/553b2447e1272f2270001531-icon-256x256.png"},
+            {"url":"https://dtgxwmigmg3gc.cloudfront.net/files/5784418fe1272f20c80018e7-icon-256x256.png"}
+        ]
+    }
+

@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import {
     Text,
     View,
-    ScrollView
+    ScrollView,
+    Button
 } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import { shoppingLists } from '../config/data';
 
-class Feed extends  Component{
+class MyLists extends  Component{
 
     onLearnMore = (shoppingList)=>{
       this.props.navigation.navigate('Details',{...shoppingList});
@@ -27,9 +28,17 @@ class Feed extends  Component{
                         />
                     ))}
                 </List>
+                <Button title="Go to Picture's profile"
+                        onPress={() =>
+                            this.props.navigation.navigate('PictureManager',{...shoppingLists})
+                        }
+                />
             </ScrollView>
+
         );
     }
 }
 
-export default Feed;
+export default MyLists;
+
+
